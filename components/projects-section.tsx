@@ -13,18 +13,18 @@ const projects = [
       "A personal portfolio website to showcase skills and projects, built with modern UI design, dark mode, and smooth animations.",
     image: "/port.png?height=300&width=500",
     technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
-    liveUrl: "https://ecommerce-demo.vercel.app",
-    githubUrl: "https://github.com/johndoe/ecommerce-platform",
+    
+    githubUrl: "https://github.com/Fawaz-devs/Portfolio.git",
     featured: true,
   },
   {
     title: "RESTful API for E-Commerce",
     description:
       "A scalable and secure RESTful API for an e-commerce platform featuring user authentication, product management, cart, and order processing.",
-    image: "/port.png?height=300&width=500",
+    image: "/placeholder.jpg?height=300&width=500",
     technologies: ["FastAPI", "PostgreSQL", "SQLAlchemy", "JWT", "Docker", "Render"],
     liveUrl: "https://taskmanager-demo.vercel.app",
-    githubUrl: "https://github.com/johndoe/task-manager",
+    githubUrl: "https://github.com/Fawaz-devs/RESTful-API-for-E-Commerce.git",
     featured: true,
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     image: "/placeholder.svg?height=300&width=500",
     technologies: ["React", "FastAPI", "TypeScript", "OpenAI API", "MongoDB", "Tailwind CSS"],
     liveUrl: "https://weather-dashboard-demo.vercel.app",
-    githubUrl: "https://github.com/johndoe/weather-dashboard",
+    githubUrl: "https://github.com/Fawaz-devs/FullStack-AI-Application.git",
     featured: false,
   },
   {
@@ -151,12 +151,12 @@ function ProjectCard({
             className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-            <Button size="sm" variant="secondary" asChild>
-              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="h-4 w-4 mr-2" />
-                Live Demo
-              </a>
-            </Button>
+              {/*<Button size="sm" variant="secondary" asChild>
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  Live Demo
+                </a>
+              </Button>*/}
             <Button size="sm" variant="secondary" asChild>
               <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4 mr-2" />
